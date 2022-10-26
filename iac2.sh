@@ -21,7 +21,7 @@ echo "--------------------------------------------"
 cd /tmp
 echo "--------------------------------------------"
 echo "Baixando arquivos do site..."
-wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
+wget "https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip"
 echo "Download de arquivos concluido"
 echo "--------------------------------------------"
 echo "Movendo arquivos para o site"
