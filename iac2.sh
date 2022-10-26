@@ -28,15 +28,15 @@ echo "Extraindo arquivos"
 unzip main.zip 
 echo "------------------"
 echo "Removendo arquivos do site"
-rm -rf /var/www/html/*
+rm -rf /var/www/html/* -v
 echo "------------------------------"
 echo "Movendo arquivos para o site"
-mv -f /tmp/linux-site-dio-main/* /var/www/html/
+mv -f /tmp/linux-site-dio-main/* /var/www/html/ -v
 echo "-------------------------------"
 echo "Arquivos movidos com sucesso!"
 echo "------------------------------"
 echo "Limpando arquivos temporarios"
-rm -rf /tmp/linux-site-dio-main /tmp/main.zip
+rm -rf /tmp/linux-site-dio-main /tmp/main.zip -v
 echo "------------------------------"
 cd /
 echo "Processo finalizado!"
