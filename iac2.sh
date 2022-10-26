@@ -4,7 +4,7 @@ echo "--------------------------------------------"
 echo "Atualizando Sistema..."
 apt-get update -y
 apt-get upgrade -y
-echo "Finalizacao da atualização do sistema"
+echo "Finalizacao da atualizacao do sistema"
 echo "--------------------------------------------"
 echo"---------------------------------------------"
 echo "Instalando apache..."
@@ -22,7 +22,6 @@ cd /tmp
 echo "--------------------------------------------"
 echo "Baixando arquivos do site..."
 wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
-echo "--------------------------------------------"
 echo "Download de arquivos concluido"
 echo "--------------------------------------------"
 echo "Movendo arquivos para o site"
