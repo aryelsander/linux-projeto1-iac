@@ -6,7 +6,7 @@ apt-get update -y
 apt-get upgrade -y
 echo "Finalizacao da atualizacao do sistema"
 echo "--------------------------------------------"
-echo"---------------------------------------------"
+echo "---------------------------------------------"
 echo "Instalando apache..."
 apt-get install apache2 -y
 
@@ -24,10 +24,20 @@ echo "Baixando arquivos do site..."
 wget "https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip"
 echo "Download de arquivos concluido"
 echo "--------------------------------------------"
+echo "Extraindo arquivos"
+unzip main.zip 
+echo "------------------"
+echo "Removendo arquivos do site"
+rm -rf /var/www/html/*
+echo "------------------------------"
 echo "Movendo arquivos para o site"
-rm -r var/www/html/*
-cp ./linux-site-dio-main/* /var/www/html/
+mv -f /tmp/linux-site-dio-main/* /var/www/html/
+echo "-------------------------------"
 echo "Arquivos movidos com sucesso!"
+echo "------------------------------"
+echo "Limpando arquivos temporarios"
+rm -rf /tmp/linux-site-dio-main /tmp/main.zip
+echo "------------------------------"
 cd /
 echo "Processo finalizado!"
 echo "--------------------------------------------"
